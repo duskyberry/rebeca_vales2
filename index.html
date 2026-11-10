@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vales Rebeca · Información sobre tus vales</title>
+<meta name="description" content="Aprende cómo se calculan tus abonos en cada tienda y conoce los vales disponibles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="#inicio">Vales Rebeca</a></header>
+
+<main id="inicio">
+<section class="hero">
+  <h1>Tu compra, tus pagos y todo mucho más claro.</h1>
+  <p>Consulta cómo se calculan tus abonos en cada tienda.</p>
+  <a class="btn" href="#info">Ver información</a>
+</section>
+
+<section id="info" class="info" aria-labelledby="info-t">
+  <h2 id="info-t">Información sobre tus vales</h2>
+  <p class="lead">Toca el nombre de tu tienda para ver cómo funciona.</p>
+
+  <details class="acc">
+    <summary>B Hermanos</summary>
+    <div class="body">
+      <details class="acc sub">
+        <summary>Efectivo</summary>
+        <div class="body">
+          <p>Cuando se trata de <u>efectivo</u>, a la cantidad del <u>primer abono le quitas $10</u> y esa será la cantidad que abonarás <u>a partir del segundo abono</u>.</p>
+          <p class="step-t">Para saber el último recibo</p>
+          <ol>
+            <li>Multiplica la cantidad del <u>segundo recibo</u> por las <u>quincenas restantes</u>.</li>
+            <li>Compara el resultado con el <u>nuevo saldo</u> que viene en ese recibo.</li>
+            <li>La <u>diferencia</u> se <u>suma o se resta</u> a la cantidad de ese recibo, y ese será el <u>importe del último recibo</u>.</li>
+          </ol>
+        </div>
+      </details>
+      <details class="acc sub">
+        <summary>Mercancía</summary>
+        <div class="body">
+          <p class="step-t">Para saber el último recibo</p>
+          <ol>
+            <li>Divide la <u>compra total</u> entre el <u>número de quincenas</u>.</li>
+            <li>Toma la <u>diferencia</u> que resulte frente a la cantidad del <u>primer abono</u>.</li>
+            <li>Multiplica esa diferencia por la <u>cantidad de quincenas</u>.</li>
+            <li>Ese resultado se <u>suma o se resta</u> a la cantidad del primer abono, y ese será el <u>importe del último recibo</u>.</li>
+          </ol>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary>Moderna</summary>
+    <div class="body">
+      <p class="step-t">Compra nueva</p>
+      <ol>
+        <li>A la <u>compra total</u> le quitas el <u>primer abono</u>.</li>
+        <li>El resultado lo divides entre <u>7</u> (si es a 8 quincenas) o entre <u>11</u> (si es a 12 quincenas).</li>
+        <li>La cantidad que resulte será tu abono <u>a partir del segundo recibo</u>.</li>
+      </ol>
+      <div class="ex"><strong>Ejemplo</strong>
+        <p>Compra total $2,925 y primer abono $390 (a 8 quincenas):<br>2,925 − 390 = 2,535 ÷ 7 = 362.14, es decir, <u>aprox. $362 a partir del segundo recibo</u>.</p>
+      </div>
+      <p class="step-t">Si ya tenías otros recibos en el mismo papel</p>
+      <ol>
+        <li>Toma el <u>total de la compra nueva</u> que viene abajo del recibo nuevo y quítale el <u>primer abono</u> de ese nuevo recibo (el de su misma columna).</li>
+        <li>Divide el resultado entre <u>7</u> u <u>11</u>, igual que arriba.</li>
+        <li><u>Súmale lo que ya te salía</u>: esa será tu cantidad <u>a partir del segundo abono</u>.</li>
+        <li>Si hay más de una compra nueva en el papel, repite el proceso con cada una y suma todo.</li>
+      </ol>
+      <div class="ex"><strong>Ejemplo</strong>
+        <p>Ya te salían $313. Hay dos compras nuevas:</p>
+        <p>Compra de $1,627 con primer abono $228: 1,627 − 228 = 1,399 ÷ 7 = 199.85 (aprox. $200).<br>
+        Compra de $4,173 con primer abono $546: 4,173 − 546 = 3,627 ÷ 7 = 518.</p>
+        <p>Primer recibo: 313 + 228 + 546 = <u>$1,087</u>.<br>A partir del segundo: 313 + 200 + 518 = <u>$1,031</u>.</p>
+      </div>
+      <p class="pd"><strong>P.D.</strong> Puede variar unos cuantos pesos cada quincena, pero se compensa: a veces es a tu favor y a veces en contra.</p>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary>JR</summary>
+    <div class="body">
+      <p>Se cobran <u>$30 por cada compra</u> (<u>no por recibo</u>) y <u>a partir del segundo abono</u> de esa compra ya no se cobran.</p>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary>Luxor</summary>
+    <div class="body">
+      <p>Cobra un <u>seguro en el primer recibo</u>, por lo regular de <u>$28 a $30</u>, y <u>a partir del segundo recibo</u> ya no lo cobran.</p>
+      <p>El importe exacto se especifica en tu <u>ticket</u>.</p>
+    </div>
+  </details>
+  <p class="disclaimer">Los importes mostrados son estimaciones informativas. Los pagos y condiciones definitivas pueden variar según la tienda y las condiciones de tu compra. Confirma los importes directamente con Vales Rebeca.</p>
+</section>
+
+<section class="avail" aria-labelledby="av-t">
+  <h2 id="av-t">Si requieres un vale nuevo, recuerda que tenemos</h2>
+  <ul class="shops">
+    <li><h3>B Hermanos</h3><p>Aplica en Ishu y B Móvil</p></li>
+    <li><h3>Moderna</h3><p>También aplica en Moderna Deportiva (Aldama) y Adidas (Galerías y Victoria)</p></li>
+    <li><h3>Deportenis</h3><p>Aplica para Dpstreet</p></li>
+    <li><h3>D'Marcos</h3><p>En Allende y Victoria, y también por la UANE en Los Pinos</p></li>
+    <li><h3>JR Sombreros</h3><p>Todas las tiendas</p></li>
+    <li><h3>Manhattan</h3><p>Todas las tiendas</p></li>
+    <li><h3>Nuna</h3><p>Antes Shoe-xotica</p></li>
+    <li><h3>Arantza</h3><p>Aplica para las tiendas Flexi de La Nogalera, Galerías y Patio</p></li>
+    <li><h3>Valetodo</h3><p>Válido en muchísimos negocios de todo rubro</p></li>
+    <li><h3>Luxor</h3><p>En Aldama y Pérez Treviño. Zapatería, accesorios, juguetería, electrónica, electrodomésticos de marcas reconocidas y mucho más</p></li>
+  </ul>
+</section>
+
+<section class="card request" aria-labelledby="req-t">
+  <h2 id="req-t">¿Necesitas un vale nuevo?</h2>
+  <p>Cuéntanos qué tienda te interesa y qué cantidad tienes en mente. Estamos para ayudarte.</p>
+  <form id="req-form" novalidate>
+    <label for="shop">Tienda deseada</label>
+    <select id="shop" required>
+      <option value="">Elige una tienda</option>
+      <option>B Hermanos</option><option>Moderna</option><option>Deportenis</option><option>D'Marcos</option>
+      <option>JR Sombreros</option><option>Manhattan</option><option>Nuna</option><option>Arantza</option>
+      <option>Valetodo</option><option>Luxor</option>
+      <option value="otra">Otra tienda…</option>
+    </select>
+    <input id="shop-other" placeholder="Escribe el nombre de la tienda" aria-label="Nombre de la otra tienda" hidden>
+    <p class="err" id="shop-err" role="alert"></p>
+    <label for="want">Cantidad esperada</label>
+    <input id="want" inputmode="decimal" autocomplete="off" placeholder="$3,000.00" required>
+    <p class="err" id="want-err" role="alert"></p>
+    <button class="btn" type="submit">Solicitar mi vale</button>
+  </form>
+  <div id="req-status" class="notice" role="status" hidden></div>
+</section>
+</main>
+
+<footer class="foot"><strong>Dios te bendice.</strong><span>Gracias por tu confianza.</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
